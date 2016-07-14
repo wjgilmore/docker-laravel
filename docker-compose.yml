@@ -19,6 +19,8 @@ services:
     build:
       context: .
       dockerfile: .docker/api-db.dockerfile
+    volumes:
+      - .docker/api-db/data-storage/mysql:/var/lib/mysql
     networks:
       - api-network
     ports:
