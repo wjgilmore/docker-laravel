@@ -56,15 +56,15 @@ Tail the logs
 
 Run Laravel Migrations
 
-`docker-compose acme_web_1 php artisan migrate`
+`docker-compose exec acme_web_1 php artisan migrate`
 
 Run Laravel Seeders
 
-`docker-compose acme_web_1 php artisan db:seed`
+`docker-compose exec acme_web_1 php artisan db:seed`
 
 Run any command
 
-`docker-compose acme_web_1 php artisan`
+`docker-compose exec acme_web_1 php artisan`
 
 SSH into a container
 
